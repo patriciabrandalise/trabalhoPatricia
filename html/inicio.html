@@ -13,13 +13,14 @@
 </head>
 <body class="bg-light text-dark">
 
+    <!-- Barra de Navegação -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#pagina1">
                 <img src="../img/flor.png" alt="Logo Magnólia" width="30" height="30" class="rounded-circle bg-white p-1">
                 Magnólia
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao" aria-label="Abrir menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="menuNavegacao">
@@ -37,6 +38,7 @@
         </div>
     </nav>
 
+    <!-- Cabeçalho e Carrossel -->
     <header class="bg-white py-5 border-bottom">
         <div class="container">
             <div class="text-center mb-4">
@@ -46,10 +48,10 @@
 
             <div id="carouselMagnolia" class="carousel slide shadow rounded-4 overflow-hidden" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselMagnolia" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#carouselMagnolia" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carouselMagnolia" data-bs-slide-to="2"></button>
-                    <button type="button" data-bs-target="#carouselMagnolia" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carouselMagnolia" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselMagnolia" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselMagnolia" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselMagnolia" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active"><img src="../img/arvore.jpg" class="d-block w-100" alt="Árvore de Magnólia"></div>
@@ -57,10 +59,10 @@
                     <div class="carousel-item"><img src="../img/class3.jpg" class="d-block w-100" alt="Espécie de Magnólia"></div>
                     <div class="carousel-item"><img src="../img/class4.jpg" class="d-block w-100" alt="Jardim de Magnólias"></div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMagnolia" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMagnolia" data-bs-slide="prev" aria-label="Anterior">
                     <span class="carousel-control-prev-icon"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselMagnolia" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMagnolia" data-bs-slide="next" aria-label="Próximo">
                     <span class="carousel-control-next-icon"></span>
                 </button>
             </div>
@@ -69,6 +71,7 @@
 
     <main class="container my-5">
 
+        <!-- 1. Introdução -->
         <section id="pagina1" class="card border-0 shadow-sm p-4 bg-white mb-5">
             <div class="row align-items-center g-4">
                 <div class="col-md-4 text-center">
@@ -83,11 +86,12 @@
             </div>
         </section>
 
+        <!-- 2. Classificação e Espécies -->
         <section id="pagina2" class="mb-5">
             <h2 class="text-success fw-bold border-bottom pb-2 mb-4">Classificação Científica e Espécies</h2>
             <div class="row g-4">
                 <div class="col-md-5">
-                    <div class="card h-100 shadow-sm border-0">
+                    <article class="card h-100 shadow-sm border-0">
                         <div class="card-header bg-success text-white fw-bold">Taxonomia</div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item"><strong>Reino:</strong> Plantae</li>
@@ -98,10 +102,10 @@
                             <li class="list-group-item"><strong>Família:</strong> Magnoliaceae</li>
                             <li class="list-group-item"><strong>Gênero:</strong> Magnólia</li>
                         </ul>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-7">
-                    <div class="card h-100 shadow-sm border-0">
+                    <article class="card h-100 shadow-sm border-0">
                         <div class="card-header bg-success text-white fw-bold">Principais Espécies</div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item"><strong>Magnólia Grandiflora:</strong> clássica, com flores brancas muito perfumadas.</li>
@@ -111,11 +115,12 @@
                             <li class="list-group-item"><strong>Magnólia Amarela:</strong> rara e exuberante, traz cor e alegria para qualquer jardim.</li>
                             <li class="list-group-item text-muted">Dentre outras...</li>
                         </ul>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
+        <!-- 3. Morfologia -->
         <section id="pagina3" class="mb-5">
             <h2 class="text-success fw-bold border-bottom pb-2 mb-4">Morfologia da Planta</h2>
             <div class="row g-4 mb-4">
@@ -126,34 +131,34 @@
                 <div class="col-md-8">
                     <div class="row g-3">
                         <div class="col-md-6">
-                            <div class="card card-body h-100 border-0 shadow-sm">
+                            <article class="card card-body h-100 border-0 shadow-sm">
                                 <h5 class="text-success fw-bold">Tamanho</h5>
                                 <p class="mb-0">6 a 30 metros, dependendo da espécie. A grandiflora possui de 12 a 24 metros.</p>
-                            </div>
+                            </article>
                         </div>
                         <div class="col-md-6">
-                            <div class="card card-body h-100 border-0 shadow-sm">
+                            <article class="card card-body h-100 border-0 shadow-sm">
                                 <h5 class="text-success fw-bold">Tronco / Caule</h5>
                                 <p class="mb-0">Madeira relativamente macia, casca amarga (plantas medicinais com sabor intenso, utilizadas para problemas digestivos e hepáticos), mais ou menos aromáticos.</p>
-                            </div>
+                            </article>
                         </div>
                         <div class="col-md-6">
-                            <div class="card card-body h-100 border-0 shadow-sm">
+                            <article class="card card-body h-100 border-0 shadow-sm">
                                 <h5 class="text-success fw-bold">Raiz</h5>
                                 <p class="mb-0">Espessa, suculenta e rica em reservas de nutrientes (carnosa), mas com textura frágil e macia (delicada).</p>
-                            </div>
+                            </article>
                         </div>
                         <div class="col-md-6">
-                            <div class="card card-body h-100 border-0 shadow-sm">
+                            <article class="card card-body h-100 border-0 shadow-sm">
                                 <h5 class="text-success fw-bold">Ramo e Broto</h5>
                                 <p class="mb-0"><strong>Ramo:</strong> Apresentam cicatrizes das folhas e estípulas que caíram.<br><strong>Broto:</strong> Pontiagudo.</p>
-                            </div>
+                            </article>
                         </div>
                         <div class="col-12">
-                            <div class="card card-body border-0 shadow-sm">
+                            <article class="card card-body border-0 shadow-sm">
                                 <h5 class="text-success fw-bold">Folhas</h5>
                                 <p class="mb-0">Largas, verde-escuras e brilhantes. Podem ser caducas (caem uma vez por ano) ou persistentes (mantêm durante o ano todo), finas ou grossas. Possuem nervuras (feixes vasculares, xilema e floema, responsáveis pela sustentação e transporte de seiva), normalmente acompanhadas de estípulas (pequenas estruturas em forma de lâmina ou escama, geralmente em pares, localizadas na base do pecíolo).</p>
-                            </div>
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -161,7 +166,7 @@
 
             <div class="row g-3">
                 <div class="col-md-8">
-                    <div class="card card-body h-100 border-0 shadow-sm">
+                    <article class="card card-body h-100 border-0 shadow-sm">
                         <h5 class="text-success fw-bold">Flor</h5>
                         <p>Grandes, pétalas aveludadas e perfume suave. São solitárias, localizadas na ponta dos ramos, sem pedúnculo (haste que sustenta a flor ou fruto) ou com pedúnculo curto. Normalmente brancas ou amareladas; dependendo da espécie podem ser rosa e roxa ou verde e amarela. Floresce geralmente na primavera.</p>
                         <ul class="mb-0">
@@ -170,90 +175,93 @@
                             <li><strong>Estames (parte masculina):</strong> numerosos e organizados em espiral ao redor do eixo floral alongado; o filete é mais curto que a antera (onde ocorre a produção do pólen), que possui duas cavidades.</li>
                             <li><strong>Ovários:</strong> também dispostos em espiral, cada um com uma única cavidade e contendo dois óvulos.</li>
                         </ul>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
+                    <article class="card h-100 border-0 shadow-sm">
                         <img src="../img/flornca.jpeg" class="card-img-top" alt="Flor de Magnólia">
                         <div class="card-body">
                             <h5 class="text-success fw-bold">Fruto e Sementes</h5>
                             <p><strong>Fruto:</strong> Tem forma de cone e é formado por vários folículos (pequenas estruturas que se abrem quando maduras), geralmente de cor vermelha ou marrom.</p>
                             <p class="mb-0"><strong>Sementes:</strong> Envolvidas por uma camada carnosa avermelhada, ficam penduradas por um longo filamento quando maduras.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
+        <!-- 4. Reprodução -->
         <section id="pagina4" class="mb-5">
             <h2 class="text-success fw-bold border-bottom pb-2 mb-4">Reprodução</h2>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
+                    <article class="card h-100 border-0 shadow-sm">
                         <img src="../img/estaquia.jpg" class="card-img-top" alt="Estaquia">
                         <div class="card-body">
                             <h5 class="text-success fw-bold">Estaquia</h5>
                             <p class="mb-0">Estacas retiradas de brotos, após preparação com hormônio para enraizamento, são plantadas em substrato. Após algumas semanas, a raiz já estará desenvolvida e pronta para replantio.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
+                    <article class="card h-100 border-0 shadow-sm">
                         <img src="../img/alporquia.jpeg" class="card-img-top" alt="Alporquia">
                         <div class="card-body">
                             <h5 class="text-success fw-bold">Alporquia</h5>
                             <p class="mb-0">Um pequeno corte é feito em um broto, sem separá-lo da planta-mãe, aplicando hormônio enraizador e envolvendo com musgo úmido coberto com plástico. Após algumas semanas, a raiz fica visível no musgo e o broto pode ser cortado e plantado.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
+                    <article class="card h-100 border-0 shadow-sm">
                         <img src="../img/semente.jpeg" class="card-img-top" alt="Sementes">
                         <div class="card-body">
                             <h5 class="text-success fw-bold">Sementes</h5>
                             <p class="mb-0">Após serem coletadas e limpas, devem ser mantidas em refrigeração por 3 meses. Depois que a casca estoura, já podem ser retiradas da geladeira e plantadas no solo.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
+        <!-- 5. Cultivo -->
         <section id="pagina5" class="mb-5">
             <h2 class="text-success fw-bold border-bottom pb-2 mb-4">Como Cultivar?</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                    <div class="card card-body h-100 border-start border-success border-4 shadow-sm">
+                    <article class="card card-body h-100 border-start border-success border-4 shadow-sm">
                         <h5 class="text-success fw-bold">Clima</h5>
                         <p class="mb-0">Prefere regiões de clima temperado a subtropical. Sofre com verões muito quentes e secos, preferindo ambientes úmidos e sombreados. Suporta bem o frio e temperaturas baixas.</p>
-                    </div>
+                    </article>
                 </div>
                 <div class="col">
-                    <div class="card card-body h-100 border-start border-success border-4 shadow-sm">
+                    <article class="card card-body h-100 border-start border-success border-4 shadow-sm">
                         <h5 class="text-success fw-bold">Solo</h5>
                         <p class="mb-0">Bem drenado, rico em matéria orgânica e levemente ácido. Desde que seja profundo, leve e fértil, desenvolve-se bem mesmo sem muitos cuidados.</p>
-                    </div>
+                    </article>
                 </div>
                 <div class="col">
-                    <div class="card card-body h-100 border-start border-success border-4 shadow-sm">
+                    <article class="card card-body h-100 border-start border-success border-4 shadow-sm">
                         <h5 class="text-success fw-bold">Luminosidade</h5>
                         <p class="mb-0">Pleno sol ou meia-sombra.</p>
-                    </div>
+                    </article>
                 </div>
                 <div class="col">
-                    <div class="card card-body h-100 border-start border-success border-4 shadow-sm">
+                    <article class="card card-body h-100 border-start border-success border-4 shadow-sm">
                         <h5 class="text-success fw-bold">Rega</h5>
                         <p class="mb-0">Regular, principalmente nos primeiros anos.</p>
-                    </div>
+                    </article>
                 </div>
                 <div class="col">
-                    <div class="card card-body h-100 border-start border-success border-4 shadow-sm">
+                    <article class="card card-body h-100 border-start border-success border-4 shadow-sm">
                         <h5 class="text-success fw-bold">Poda</h5>
                         <p class="mb-0">Apenas para remoção de galhos secos ou doentes.</p>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
+        <!-- 6. Utilidades -->
         <section id="pagina6" class="mb-5">
             <h2 class="text-success fw-bold border-bottom pb-2 mb-4">Utilidades</h2>
             <div class="row g-4 align-items-center">
@@ -277,6 +285,7 @@
             </div>
         </section>
 
+        <!-- 7. Curiosidades -->
         <section id="pagina7" class="mb-5">
             <h2 class="text-success fw-bold border-bottom pb-2 mb-4">Curiosidades</h2>
             <div class="row g-4">
@@ -292,18 +301,19 @@
                     </ul>
                 </div>
                 <div class="col-md-4 d-flex flex-column gap-3">
-                    <div class="card border-0 shadow-sm">
+                    <figure class="card border-0 shadow-sm mb-0">
                         <img src="../img/pierre.jpg" class="card-img-top" alt="Pierre Magnol">
-                        <div class="card-body text-center py-2"><small class="text-muted">Botânico Pierre Magnol (1638–1715)</small></div>
-                    </div>
-                    <div class="card border-0 shadow-sm">
+                        <figcaption class="card-body text-center py-2"><small class="text-muted">Botânico Pierre Magnol (1638–1715)</small></figcaption>
+                    </figure>
+                    <figure class="card border-0 shadow-sm mb-0">
                         <img src="../img/fossil.jpg" class="card-img-top" alt="Fóssil de Magnólia">
-                        <div class="card-body text-center py-2"><small class="text-muted">Registro fóssil primitivo</small></div>
-                    </div>
+                        <figcaption class="card-body text-center py-2"><small class="text-muted">Registro fóssil primitivo</small></figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
 
+        <!-- 8. Contato -->
         <section id="pagina8" class="mb-5">
             <h2 class="text-success fw-bold border-bottom pb-2 mb-4">Contato</h2>
             <div class="row g-4">
@@ -328,22 +338,23 @@
                     </div>
                 </form>
 
-                <div class="col-md-5">
+                <aside class="col-md-5">
                     <div class="card card-body border-0 shadow-sm p-4 h-100 bg-white">
                         <h5 class="fw-bold text-success mb-3">Outros contatos</h5>
                         <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
                             <li><strong>Telefone:</strong> (54) 99976-3430</li>
                             <li><strong>E-mail:</strong> 2024302691@aluno.sertao.ifrs.edu.br</li>
-                            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/pati.brandalise/" target="_blank" class="text-decoration-none text-success">@pati.brandalise</a></li>
-                            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/patr%C3%ADcia-brandalise-522821341/" target="_blank" class="text-decoration-none text-success">Patrícia Brandalise</a></li>
+                            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/pati.brandalise/" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-success">@pati.brandalise</a></li>
+                            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/patr%C3%ADcia-brandalise-522821341/" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-success">Patrícia Brandalise</a></li>
                         </ul>
                     </div>
-                </div>
+                </aside>
             </div>
         </section>
 
     </main>
 
+    <!-- Rodapé -->
     <footer class="bg-dark text-white text-center py-4 mt-5">
         <p class="mb-0">© Por Patrícia Brandalise - 2026.</p>
     </footer>
