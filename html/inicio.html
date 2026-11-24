@@ -5,228 +5,349 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magnólia</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        html { scroll-behavior: smooth; scroll-padding-top: 75px; }
+        .carousel-item img { height: 450px; object-fit: cover; }
+        .card-img-top { height: 220px; object-fit: cover; }
+    </style>
 </head>
-<body>
-    <header>
-        <p class="titulo">Magnólia</p>
-    </header>
-        <nav class="botoes">
-            <a href="#pagina1">
-                <button>Página Inicial</button>
-            </a>
-            <a href="#pagina2">
-                <button>Classificação</button>
-            </a>
-            <a href="#pagina3">
-                <button>Morfologia</button>
-            </a>   
-            <a href="#pagina4">
-                <button>Reprodução</button>
-            </a>
-            <a href="#pagina5">
-                <button>Como Cultivar?</button>
-            </a>
-            <a href="#pagina6">
-                <button>Utilidades</button>
-            </a>
-            <a href="#pagina7">
-                <button>Curiosidades</button>
-            </a>
-            <a href="#pagina8">
-                <button>Contato</button>
-            </a>
-        </nav>
+<body class="bg-light text-dark">
 
-        <p class="frase">Conheça um pouco sobre a planta Magnólia!</p>
-        <div id="carouselPeek" class="carousel slide" data-bs-ends="stop" style="--bs-carousel-items-peek: 3rem; --bs-carousel-items-gap: 1rem;">
-        <div class="d-flex justify-content-between align-items-center">
-            <div>
-            <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselPeek" data-bs-slide="prev" style="--bs-carousel-control-icon-width: 1rem;">
-                <span class="carousel-icon-prev" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#pagina1">
+                <img src="../img/flor.png" alt="Logo Magnólia" width="30" height="30" class="rounded-circle bg-white p-1">
+                Magnólia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselPeek" data-bs-slide="next" style="--bs-carousel-control-icon-width: 1rem;">
-                <span class="carousel-icon-next" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            </div>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active"><img src="../img/arvore.jpg" class="d-block w-100 rounded-5" alt="..."></div>
-            <div class="carousel-item"><img src="../img/class2.avif" class="d-block w-100 rounded-5" alt="..."></div>
-            <div class="carousel-item"><img src="../img/class3.jpg" class="d-block w-100 rounded-5" alt="..."></div>
-        </div>
-        </div>
-
-        <section id="pagina1">
-        <div>
-            <P class="texto">
-                A Magnólia grandiflora é uma planta primitiva e exuberante, existindo no planeta há mais de 90 <br>
-                milhões de anos. Ela se destaca no paisagismo mundial por suas flores grandes, esculturais e <br>
-                intensamente perfumadas.
-            </P>
-        </div>
-        </section>
-
-        <section id="pagina2">
-             </div>
-                <p class="texto">
-                    <ul>
-                        <li>Reino: Plantae</li> <br>
-                        <li>Filo: Tracheophyta</li> <br>
-                        <li>Clado: Angiospermas</li> <br>
-                        <li>Classe: Magnoliopsida</li> <br>
-                        <li>Ordem: Magnoliales</li> <br>
-                        <li>Família: Magnoliaceae</li> <br>
-                        <li>Gênero: Magnólia</li> <br>
-                        <li>Espécies:
-                            <ul>
-                                <li>Magnólia Grandiflora: clássica, com flores brancas muito perfumadas.</li>
-                                <li>Magnólia Stellata: com flores em formato de estrela, em branco ou rosa.</li>
-                                <li>Magnólia Soulangeana: em tons de branco, rosa e roxo, sendo uma das mais cultivadas no mundo.</li>
-                                <li>Magnólia Liliflora: também chamada de Magnólia Jane, tem flores arroxeadas em formato de tulipa.</li>
-                                <li>Magnólia Amarela: rara e exuberante, traz cor e alegria para qualquer jardim.</li>
-                                <li>Dentre outras</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </p>
-            </div>
-        </section>
-
-        <section id="pagina3">
-            <div>
-            <p class="subtitulo">Tamanho:</p>
-            <p class="texto">6 a 30 metros, dependendo da espécie. A grandiflora possui de 12 a 24 metros. </p>
-            
-            <p class="subtitulo">Tronco/caule:</p>
-            <p class="texto"> Madeira relativamente macia, casca amarga (plantas medicinais com sabor intenso, utilizadas para problemas digestivos e hepáticos), mais ou menos aromáticos. </p>
-
-            <p class="subtitulo">Raíz:</p>
-            <p class="texto"> Espessa, suculenta e rica em reservas de nutrientes (carnosa), mas que possui uma textura frágil e macia (delicada).
-
-            <p class="subtitulo">Rramo:</p>
-            <p class="texto"> Apresentam cicatrizes das folhas e das estípulas que caíram.</p>
-
-            <p class="subtitulo">Broto:</p>
-            <p class="texto"> Pontiagudo
-
-            <p class="subtitulo">Folhas:</p>
-            <p class="texto"> Largas, verde-escuras e brilhantes. Podem ser caducas (caem uma vez por ano) ou persistentes (mantém durante o ano todo).Podem ser finas ou grossas. Possuem nervuras (feixes vasculares (xilema e floema) responsáveis pela sustentação e transporte de seiva), normalmente acompanhadas de estípulas (pequenas estruturas em forma de lâmina ou escama, geralmente em pares, localizadas na base do pecíolo (inserção da folha no caule) de muitas plantas vasculares).
-
-            <p class="subtitulo">Flor:</p>
-            <p class="texto"> Grandes, pétalas aveludadas e perfume suave. são solitárias, localizadas na ponta dos ramos. Podem ser sem pedúnculo (Haste que sustenta uma flor solitária ou fruto) ou com um pedúnculo curto. Normalmente brancas ou amareladas, dependendo da espécie pode ser rosa e roxa ou verde e amarela. Floresce geralmente na primavera.
-            <ul>
-                <li>O cálice é formado por três sépalas, que podem se abrir ou se curvar para trás, geralmente verdes por fora ou semelhantes às pétalas. </li>
-                <li>A corola possui de 6 a 12 pétalas, dispostas de forma sobreposta, podendo ser mais carnudas ou mais rígidas. </li>
-                <li>Os estames (parte masculina da flor) são numerosos e organizados em espiral ao redor do eixo floral alongado; o filete (estrutura para facilitar a polinização) é mais curto que a antera (onde ocorre a produção do pólen), que possui duas cavidades. </li>
-                <li>Os ovários também estão dispostos em espiral, cada um com uma única cavidade e contendo dois óvulos.</li>
-            </ul></p>
-                
-            <p class="subtitulo">Fruto:</p>
-            <p class="texto"> Tem forma de cone e é formado por vários folículos (pequenas estruturas que se abrem quando maduras), geralmente de cor vermelha ou marrom. </p>
-
-            <p class="subtitulo">Sementes:</p>
-            <p class="texto"> São envolvidas por uma camada carnosa avermelhada e ficam penduradas por um longo filamento quando maduras.</p>
-
-        </div>
-        </section>
-
-        <section id="pagina4">
-            <div>
-                <p class="subtitulo">Estaquia:</p>
-                <p class="texto">Estacas retiradas de brotos, depois de certa preparação utilizando hormônio para enraizamento, são plantadas em substrato. Após algumas semanas, a raíz já estará desenvolvida e pronta para ser replantada em outro lugar. </p>
-
-                <p class="subtitulo">Alporquia:</p>
-                <p class="texto">um pequeno corte é feito em um broto, sem separá-lo da planta-mãe, onde é colocado hormônio enraizador e envolto com musgo, que deve ser mantido úmido e coberto com plástico. Após algumas semanas, a raíz ficará visível através do musgo, e então o broto poderá ser cortado e plantado. </p>
-        
-                <p class="subtitulo">Sementes:</p>
-                <p class="texto"> Após serem coletadas e limpas, devem ser mantidas em refrigeração por 3 meses. Depois que a casca estoura, já podem ser retiradas da geladeira e plantadas no solo. </p>
-            </div>
-        </section>
-
-        <section id="pagina5">
-            <div>
-                <p class="subtitulo">Clima:</p>
-                <p class="texto"> Prefere regiões de clima temperado a subtropical. Elas sofrem com verões muito quentes e secos, preferem ambientes mais úmidos e sombreados. Suportam bem o frio, e algumas resistem até a temperaturas bastante baixas. </p>
-
-                <p class="subtitulo">Solo:</p>
-                <p class="texto"> Bem drenado, rico em matéria orgânica e levemente ácido. Desde que o solo seja profundo, leve e fértil, desenvolve-se bem mesmo sem muitos cuidados. </p>
-
-                <p class="subtitulo">Luminosidade:</p>
-                <p class="texto">Pleno sol ou meia-sombra. </p>
-
-                <p class="subtitulo">Rega:</p>
-                <p class="texto">Regular, principalmente nos primeiros anos.  </p>
-                
-                <p class="subtitulo">Poda:</p>
-                <p class="texto">Apenas para remoção de galhos secos ou doentes. </p>
-         </div>
-        </section>
-
-        <section id="pagina6">
-             <div>
-                <p class="texto">
-                    <ul>
-                        <li>Folhas e cascas usadas na medicina (propriedades anti-inflamatórias,antioxidantes e relaxantes musculares)</li>
-                        <br><li>Árvore no paisagismo</li>
-                        <br><li>Flores utilizadas para buquês e decorações</li>
-                        <br><li>Na China, as sementes trituradas da magnólia denudata são usadas no tratamento de inflamações dos olhos e da garganta, e os botões florais são utilizados como tempero para o arroz.</li>
-                        <br><li>Também como tempero, semelhante ao uso das folhas de louro, em Porto Rico são utilizadas as folhas da magnólia splendens.</li>
-                        <br><li>No Japão, a madeira da magnólia kobus é bastante utilizada na confecção de objetos laqueados (peças revestidas com laca, uma pintura de alta qualidade aplicada em várias camadas, polida para obter acabamento liso, brilhante ou fosco).</li>
-                    </ul>
-                </p>
-            </div>
-        </section>
-
-        <section id="pagina7">
-            <div>
-                <ul>
-                    <li> A magnólia flor é símbolo de pureza, dignidade e perseverança.</li>
-                    <br><li>Crescimento lento</li>
-                    <br><li>Restos fósseis dessas plantas já foram encontrados em regiões árticas, na América do Norte e na Europa central.</li>
-                    <br><li>O gênero Magnolia foi estabelecido em 1703 por Plumier, que o nomeou em homenagem a Pierre Magnol, do Jardim Botânico de Montpellier.</li>
-                    <br><li>Até o ano 1700, apenas uma espécie era conhecida.</li>
-                    <br><li>Nos jardins europeus, especialmente nos séculos XVIII e XIX, as magnólias se tornaram muito valorizadas. Em cidades como Florença, era comum que colecionadores buscassem reunir o maior número possível de espécies exóticas, criando jardins ricos e variados.</li>
-                    <br><li>Muito provavelmente as primeiras plantas com flor que apareceram na história do planeta assemelhavam-se às atuais Magnólias, uma vez que os fósseis de flores mais antigas que se conhecem apresentam estruturas muito idênticas às deste género botânico.</li>
+            <div class="collapse navbar-collapse" id="menuNavegacao">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#pagina1">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pagina2">Classificação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pagina3">Morfologia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pagina4">Reprodução</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pagina5">Cultivo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pagina6">Utilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pagina7">Curiosidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pagina8">Contato</a></li>
                 </ul>
             </div>
+        </div>
+    </nav>
 
-        </section>
-        <section id="pagina8">
-             <div>
-                <form>
-                    <p class="subtitulo">Qual seu E-mail?</p>
-                    <label>E-mail:</label> <br> <!-- identifica e descreve um campo do formulário --> 
-                    <input type="email" name="email"> <!--cria um campo para o usuário digitar -->
+    <header class="bg-white py-5 border-bottom">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h1 class="display-4 fw-bold text-success">Magnólia</h1>
+                <p class="lead text-muted">Conheça um pouco sobre a planta Magnólia!</p>
+            </div>
 
-                    <p class="subtitulo">Como podemos ajudar?</p>
-                    <label>Deixe sua dúvida:</label> <br>
-                    <textarea name="mensagem"></textarea> <!--cria uma área para textos longos -->
+            <div id="carouselMagnolia" class="carousel slide shadow rounded-4 overflow-hidden" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMagnolia" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselMagnolia" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselMagnolia" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselMagnolia" data-bs-slide-to="3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active"><img src="../img/arvore.jpg" class="d-block w-100" alt="Árvore de Magnólia"></div>
+                    <div class="carousel-item"><img src="../img/class2.avif" class="d-block w-100" alt="Flor de Magnólia"></div>
+                    <div class="carousel-item"><img src="../img/class3.jpg" class="d-block w-100" alt="Espécie de Magnólia"></div>
+                    <div class="carousel-item"><img src="../img/class4.jpg" class="d-block w-100" alt="Jardim de Magnólias"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMagnolia" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMagnolia" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
-                    <p class="subtitulo">Deixe suas sugestões!</p>
-                    <label>Como podemos melhorar?:</label> <br>
-                    <textarea name="sugestao"></textarea> <br>
+    <main class="container my-5">
 
-                    <button class=bform type="submit">Enviar</button>
-                    <button class=bform type="reset">Limpar</button>
-                </form>
-                <p class="subtitulo">Outros contatos:</p>
-                <p class="texto">
-                    <li>Telefone: (54)99976-3430</li>
-                    <li>E-mail: 2024302691@aluno.sertao.ifrs.edu.br</li> 
-                    <li>Instagram: <a href="//www.instagram.com/pati.brandalise/">pati.brandalise</a></li>
-                    <li>Linkedin: <a href="https://www.linkedin.com/in/patr%C3%ADcia-brandalise-522821341/">Patrícia Brandalise</a></li>
-                    <br>
-                    <br>
-                    <br>
-                </p>
+        <section id="pagina1" class="card border-0 shadow-sm p-4 bg-white mb-5">
+            <div class="row align-items-center g-4">
+                <div class="col-md-4 text-center">
+                    <img src="../img/mag.png" class="img-fluid rounded-3" alt="Magnólia Grandiflora">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="text-success fw-bold mb-3">Sobre a Magnólia</h2>
+                    <p class="fs-5 text-secondary mb-0">
+                        A <strong>Magnólia grandiflora</strong> é uma planta primitiva e exuberante, existindo no planeta há mais de 90 milhões de anos. Ela se destaca no paisagismo mundial por suas flores grandes, esculturais e intensamente perfumadas.
+                    </p>
+                </div>
             </div>
         </section>
 
-    <footer>
-        <p>© Por Patrícia Brandalise - 2026.</p>
+        <section id="pagina2" class="mb-5">
+            <h2 class="text-success fw-bold border-bottom pb-2 mb-4">Classificação Científica e Espécies</h2>
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-header bg-success text-white fw-bold">Taxonomia</div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Reino:</strong> Plantae</li>
+                            <li class="list-group-item"><strong>Filo:</strong> Tracheophyta</li>
+                            <li class="list-group-item"><strong>Clado:</strong> Angiospermas</li>
+                            <li class="list-group-item"><strong>Classe:</strong> Magnoliopsida</li>
+                            <li class="list-group-item"><strong>Ordem:</strong> Magnoliales</li>
+                            <li class="list-group-item"><strong>Família:</strong> Magnoliaceae</li>
+                            <li class="list-group-item"><strong>Gênero:</strong> Magnólia</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-header bg-success text-white fw-bold">Principais Espécies</div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Magnólia Grandiflora:</strong> clássica, com flores brancas muito perfumadas.</li>
+                            <li class="list-group-item"><strong>Magnólia Stellata:</strong> com flores em formato de estrela, em branco ou rosa.</li>
+                            <li class="list-group-item"><strong>Magnólia Soulangeana:</strong> em tons de branco, rosa e roxo, sendo uma das mais cultivadas no mundo.</li>
+                            <li class="list-group-item"><strong>Magnólia Liliflora:</strong> também chamada de Magnólia Jane, tem flores arroxeadas em formato de tulipa.</li>
+                            <li class="list-group-item"><strong>Magnólia Amarela:</strong> rara e exuberante, traz cor e alegria para qualquer jardim.</li>
+                            <li class="list-group-item text-muted">Dentre outras...</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pagina3" class="mb-5">
+            <h2 class="text-success fw-bold border-bottom pb-2 mb-4">Morfologia da Planta</h2>
+            <div class="row g-4 mb-4">
+                <div class="col-md-4 d-flex flex-column gap-3">
+                    <img src="../img/morfologia.jpg" class="img-fluid rounded-3 shadow-sm w-100" alt="Morfologia da Magnólia">
+                    <img src="../img/broto.png" class="img-fluid rounded-3 shadow-sm w-100" alt="Broto de Magnólia">
+                </div>
+                <div class="col-md-8">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="card card-body h-100 border-0 shadow-sm">
+                                <h5 class="text-success fw-bold">Tamanho</h5>
+                                <p class="mb-0">6 a 30 metros, dependendo da espécie. A grandiflora possui de 12 a 24 metros.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card card-body h-100 border-0 shadow-sm">
+                                <h5 class="text-success fw-bold">Tronco / Caule</h5>
+                                <p class="mb-0">Madeira relativamente macia, casca amarga (plantas medicinais com sabor intenso, utilizadas para problemas digestivos e hepáticos), mais ou menos aromáticos.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card card-body h-100 border-0 shadow-sm">
+                                <h5 class="text-success fw-bold">Raiz</h5>
+                                <p class="mb-0">Espessa, suculenta e rica em reservas de nutrientes (carnosa), mas com textura frágil e macia (delicada).</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card card-body h-100 border-0 shadow-sm">
+                                <h5 class="text-success fw-bold">Ramo e Broto</h5>
+                                <p class="mb-0"><strong>Ramo:</strong> Apresentam cicatrizes das folhas e estípulas que caíram.<br><strong>Broto:</strong> Pontiagudo.</p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card card-body border-0 shadow-sm">
+                                <h5 class="text-success fw-bold">Folhas</h5>
+                                <p class="mb-0">Largas, verde-escuras e brilhantes. Podem ser caducas (caem uma vez por ano) ou persistentes (mantêm durante o ano todo), finas ou grossas. Possuem nervuras (feixes vasculares, xilema e floema, responsáveis pela sustentação e transporte de seiva), normalmente acompanhadas de estípulas (pequenas estruturas em forma de lâmina ou escama, geralmente em pares, localizadas na base do pecíolo).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-8">
+                    <div class="card card-body h-100 border-0 shadow-sm">
+                        <h5 class="text-success fw-bold">Flor</h5>
+                        <p>Grandes, pétalas aveludadas e perfume suave. São solitárias, localizadas na ponta dos ramos, sem pedúnculo (haste que sustenta a flor ou fruto) ou com pedúnculo curto. Normalmente brancas ou amareladas; dependendo da espécie podem ser rosa e roxa ou verde e amarela. Floresce geralmente na primavera.</p>
+                        <ul class="mb-0">
+                            <li><strong>Cálice:</strong> formado por três sépalas, que podem se abrir ou se curvar para trás, geralmente verdes por fora ou semelhantes às pétalas.</li>
+                            <li><strong>Corola:</strong> possui de 6 a 12 pétalas sobrepostas, mais carnudas ou mais rígidas.</li>
+                            <li><strong>Estames (parte masculina):</strong> numerosos e organizados em espiral ao redor do eixo floral alongado; o filete é mais curto que a antera (onde ocorre a produção do pólen), que possui duas cavidades.</li>
+                            <li><strong>Ovários:</strong> também dispostos em espiral, cada um com uma única cavidade e contendo dois óvulos.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="../img/flornca.jpeg" class="card-img-top" alt="Flor de Magnólia">
+                        <div class="card-body">
+                            <h5 class="text-success fw-bold">Fruto e Sementes</h5>
+                            <p><strong>Fruto:</strong> Tem forma de cone e é formado por vários folículos (pequenas estruturas que se abrem quando maduras), geralmente de cor vermelha ou marrom.</p>
+                            <p class="mb-0"><strong>Sementes:</strong> Envolvidas por uma camada carnosa avermelhada, ficam penduradas por um longo filamento quando maduras.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pagina4" class="mb-5">
+            <h2 class="text-success fw-bold border-bottom pb-2 mb-4">Reprodução</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="../img/estaquia.jpg" class="card-img-top" alt="Estaquia">
+                        <div class="card-body">
+                            <h5 class="text-success fw-bold">Estaquia</h5>
+                            <p class="mb-0">Estacas retiradas de brotos, após preparação com hormônio para enraizamento, são plantadas em substrato. Após algumas semanas, a raiz já estará desenvolvida e pronta para replantio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="../img/alporquia.jpeg" class="card-img-top" alt="Alporquia">
+                        <div class="card-body">
+                            <h5 class="text-success fw-bold">Alporquia</h5>
+                            <p class="mb-0">Um pequeno corte é feito em um broto, sem separá-lo da planta-mãe, aplicando hormônio enraizador e envolvendo com musgo úmido coberto com plástico. Após algumas semanas, a raiz fica visível no musgo e o broto pode ser cortado e plantado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="../img/semente.jpeg" class="card-img-top" alt="Sementes">
+                        <div class="card-body">
+                            <h5 class="text-success fw-bold">Sementes</h5>
+                            <p class="mb-0">Após serem coletadas e limpas, devem ser mantidas em refrigeração por 3 meses. Depois que a casca estoura, já podem ser retiradas da geladeira e plantadas no solo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pagina5" class="mb-5">
+            <h2 class="text-success fw-bold border-bottom pb-2 mb-4">Como Cultivar?</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card card-body h-100 border-start border-success border-4 shadow-sm">
+                        <h5 class="text-success fw-bold">Clima</h5>
+                        <p class="mb-0">Prefere regiões de clima temperado a subtropical. Sofre com verões muito quentes e secos, preferindo ambientes úmidos e sombreados. Suporta bem o frio e temperaturas baixas.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-body h-100 border-start border-success border-4 shadow-sm">
+                        <h5 class="text-success fw-bold">Solo</h5>
+                        <p class="mb-0">Bem drenado, rico em matéria orgânica e levemente ácido. Desde que seja profundo, leve e fértil, desenvolve-se bem mesmo sem muitos cuidados.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-body h-100 border-start border-success border-4 shadow-sm">
+                        <h5 class="text-success fw-bold">Luminosidade</h5>
+                        <p class="mb-0">Pleno sol ou meia-sombra.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-body h-100 border-start border-success border-4 shadow-sm">
+                        <h5 class="text-success fw-bold">Rega</h5>
+                        <p class="mb-0">Regular, principalmente nos primeiros anos.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-body h-100 border-start border-success border-4 shadow-sm">
+                        <h5 class="text-success fw-bold">Poda</h5>
+                        <p class="mb-0">Apenas para remoção de galhos secos ou doentes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pagina6" class="mb-5">
+            <h2 class="text-success fw-bold border-bottom pb-2 mb-4">Utilidades</h2>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-7">
+                    <ul class="list-group shadow-sm">
+                        <li class="list-group-item">Folhas e cascas usadas na medicina (propriedades anti-inflamatórias, antioxidantes e relaxantes musculares).</li>
+                        <li class="list-group-item">Árvore muito valorizada no paisagismo.</li>
+                        <li class="list-group-item">Flores utilizadas para buquês e decorações.</li>
+                        <li class="list-group-item">Na China, as sementes trituradas da <em>Magnólia denudata</em> tratam inflamações dos olhos e da garganta, e os botões florais temperam o arroz.</li>
+                        <li class="list-group-item">Também como tempero, semelhante às folhas de louro, em Porto Rico são usadas as folhas da <em>Magnólia splendens</em>.</li>
+                        <li class="list-group-item">No Japão, a madeira da <em>Magnólia kobus</em> é muito utilizada na confecção de objetos laqueados (peças revestidas com laca em várias camadas e polidas para acabamento liso, brilhante ou fosco).</li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <div class="row g-2">
+                        <div class="col-6"><img src="../img/buque.jpg" class="img-fluid rounded shadow-sm" alt="Buquê de Magnólia"></div>
+                        <div class="col-6"><img src="../img/decoracao.jpg" class="img-fluid rounded shadow-sm" alt="Decoração com Magnólia"></div>
+                        <div class="col-12"><img src="../img/movel.jpg" class="img-fluid rounded shadow-sm w-100" style="max-height: 200px; object-fit: cover;" alt="Madeira de Magnólia"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pagina7" class="mb-5">
+            <h2 class="text-success fw-bold border-bottom pb-2 mb-4">Curiosidades</h2>
+            <div class="row g-4">
+                <div class="col-md-8">
+                    <ul class="list-group shadow-sm h-100">
+                        <li class="list-group-item">A flor de magnólia é símbolo de pureza, dignidade e perseverança.</li>
+                        <li class="list-group-item">Possui crescimento lento.</li>
+                        <li class="list-group-item">Restos fósseis dessas plantas já foram encontrados em regiões árticas, na América do Norte e na Europa central.</li>
+                        <li class="list-group-item">O gênero <em>Magnolia</em> foi estabelecido em 1703 por Plumier, em homenagem a <strong>Pierre Magnol</strong>, do Jardim Botânico de Montpellier.</li>
+                        <li class="list-group-item">Até o ano 1700, apenas uma espécie era conhecida.</li>
+                        <li class="list-group-item">Nos jardins europeus dos séculos XVIII e XIX, tornaram-se muito valorizadas; em cidades como Florença, colecionadores reuniam diversas espécies exóticas.</li>
+                        <li class="list-group-item">Muito provavelmente as primeiras plantas com flor do planeta assemelhavam-se às atuais Magnólias, pois os fósseis de flores mais antigos conhecidos apresentam estruturas idênticas a este gênero.</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 d-flex flex-column gap-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="../img/pierre.jpg" class="card-img-top" alt="Pierre Magnol">
+                        <div class="card-body text-center py-2"><small class="text-muted">Botânico Pierre Magnol (1638–1715)</small></div>
+                    </div>
+                    <div class="card border-0 shadow-sm">
+                        <img src="../img/fossil.jpg" class="card-img-top" alt="Fóssil de Magnólia">
+                        <div class="card-body text-center py-2"><small class="text-muted">Registro fóssil primitivo</small></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pagina8" class="mb-5">
+            <h2 class="text-success fw-bold border-bottom pb-2 mb-4">Contato</h2>
+            <div class="row g-4">
+                <form class="col-md-7">
+                    <div class="card card-body border-0 shadow-sm p-4">
+                        <div class="mb-3">
+                            <label for="emailContato" class="form-label fw-bold text-success">Qual seu E-mail?</label>
+                            <input type="email" class="form-control" id="emailContato" name="email" placeholder="seuemail@exemplo.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="duvidaContato" class="form-label fw-bold text-success">Como podemos ajudar? (Deixe sua dúvida)</label>
+                            <textarea class="form-control" id="duvidaContato" name="mensagem" rows="3" placeholder="Escreva sua dúvida aqui..."></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="sugestaoContato" class="form-label fw-bold text-success">Deixe suas sugestões! (Como podemos melhorar?)</label>
+                            <textarea class="form-control" id="sugestaoContato" name="sugestao" rows="3" placeholder="Escreva suas sugestões..."></textarea>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-success px-4" type="submit">Enviar</button>
+                            <button class="btn btn-outline-secondary px-4" type="reset">Limpar</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="col-md-5">
+                    <div class="card card-body border-0 shadow-sm p-4 h-100 bg-white">
+                        <h5 class="fw-bold text-success mb-3">Outros contatos</h5>
+                        <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                            <li><strong>Telefone:</strong> (54) 99976-3430</li>
+                            <li><strong>E-mail:</strong> 2024302691@aluno.sertao.ifrs.edu.br</li>
+                            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/pati.brandalise/" target="_blank" class="text-decoration-none text-success">@pati.brandalise</a></li>
+                            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/patr%C3%ADcia-brandalise-522821341/" target="_blank" class="text-decoration-none text-success">Patrícia Brandalise</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0">© Por Patrícia Brandalise - 2026.</p>
     </footer>
+
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
